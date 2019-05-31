@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        function formdata(number1,number2){
+          let a,b
+           number1 = number1.toString()
+           number2 = number2.toString()
+ 
+          if(number1.indexOf(".")>-1){
+            a = number1.split(".")[1].length
+          } else {
+            a = 0
+          }
+          
+          if(number2.indexOf(".")>-1){
+            b = number2.split(".")[1].length
+          } else {
+            b = 0
+          }
+          
+
+          if(a==0 && b==0){
+            return Math.pow(10,0)
+          } else {
+            if(a>b){
+              return Math.pow(10,a)
+            }
+            return Math.pow(10,b)
+          }
+
+        }
+    
+    
+    </script>
+</body>
+</html>
